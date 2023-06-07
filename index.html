@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+  <!-- Metadatos -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Estilos personalizados y icono de la web -->
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Librerias esternas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- Titulo -->
   <title>Portafolio - Andres Morales</title>
 </head>
 <body>
-  
+
+  <!-- Menu Encabezado -->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">Andres Morales</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+          <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+          <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+          <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

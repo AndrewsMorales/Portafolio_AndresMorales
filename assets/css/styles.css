@@ -1,0 +1,66 @@
+/* Importamos las fuentes a utilizar */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+/* Generacion de los estilos generales */
+*{
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+  margin: 0;
+  padding: 0;
+}
+
+/* Permite deslizar cuando se hace un click en los links del menu */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Estilos del menu de cabecera */
+.contenedor-header{
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-header header{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+  font-family: 'Righteous';
+  font-size: 36px;
+  color: #f74747;
+  text-decoration: none;
+}
+
+.contenedor-header header ul{
+  display: flex;
+  list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+  text-align: none;
+  color: #fff;
+  margin: 0px 15px;
+  padding: 3px;
+  transition: .5;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+  color: #f74747;
+}
+.nav-responsive{
+  background-color: #f74747;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
