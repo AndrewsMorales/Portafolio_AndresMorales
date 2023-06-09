@@ -65,3 +65,24 @@ $("#blogResetarios").on("click", function () {
 $("#portafolioPersonal").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Portafolio_AndresMorales");
 });
+
+/* 
+  Se crea una funcion apartir de la ejecucion de un evento para enviar el mensaje de contacto
+*/
+$("#enviarMensajeContacto").on("click", function () {
+  var inNombre = $("#inputNombre").val().trim();
+  var inNumero = $("#inputNumero").val().trim();
+  var inEmail = $("#inputEmail").val().trim();
+  var textMensaje = $("#textMensaje").val().trim();
+  var textMensajeModi = textMensaje.replace(/ /g, "%20");
+  if (inNombre == "" || inNumero == "" || inEmail == "" || textMensaje == "") {
+    $("#mensajeError").removeAttr("hidden");
+  } else {
+    $("#mensajeError").attr("hidden", "");
+    $("#formContacto")[0].reset();
+    $("html, body").animate({ scrollTop: $("#contacto").offset().top }, 1000);
+    window.open(
+      `https://wa.me/573016490791?text=Hola%20soy%20*${inNombre}*.%0A*Tel:*%20${inNumero}%0A*Email:*%20${inEmail}%0A${textMensajeModi}`
+    );
+  }
+});

@@ -42,7 +42,7 @@
               <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
             </li>
             <li>
-              <a href="#portafolio" onclick="seleccionar()">Portafolio</a>
+              <a href="#portfolio" onclick="seleccionar()">Portafolio</a>
             </li>
             <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
           </ul>
@@ -445,6 +445,65 @@
             <div class="overlay">
               <h3>Portafolio</h3>
               <p>Portafolio Pesonal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form id="formContacto">
+              <h3 class="mensajeError" id="mensajeError" hidden>
+                Complete Todos los campos
+              </h3>
+              <input type="text" id="inputNombre" placeholder="Tú Nombre" />
+              <input
+                type="text"
+                id="inputNumero"
+                placeholder="Número telefónico"
+              />
+              <input
+                type="text"
+                id="inputEmail"
+                placeholder="Dirección de correo"
+              />
+              <input type="text" id="inputTema" placeholder="Tema" />
+              <textarea
+                id="textMensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button id="enviarMensajeContacto">
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="assets/images/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Bogotá D.C, Colombia
+                </li>
+                <li>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Whatsapp:(+57) 301 649 0791
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  andresdavidmoralescastro0@gmail.com
+                </li>
+              </ul>
             </div>
           </div>
         </div>
