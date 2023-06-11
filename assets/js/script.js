@@ -59,6 +59,9 @@ window.onscroll = function () {
 /* 
   Se crea los eventos para cuando precionen algun proyecto los redireccione a un enlace
 */
+$("#crudLaravel").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Crud_Laravel");
+});
 $("#blogResetarios").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Blog_Resetarios");
 });
