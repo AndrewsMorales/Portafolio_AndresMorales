@@ -1,540 +1,530 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Metadatos -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Estilos personalizados y icono de la web -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/png"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <!-- Librerias esternas -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-    <!-- Titulo -->
-    <title>Portafolio - Andres Morales</title>
-  </head>
-  <body>
-    <!-- Menu Encabezado -->
-    <div class="contenedor-header">
-      <header>
-        <div class="logo">
-          <a href="#">Andres Morales</a>
-        </div>
-        <nav id="nav">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Estilos personalizados y icono de la web -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Librerias esternas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <!-- Titulo -->
+  <title>Portafolio - Andres Morales</title>
+</head>
+
+<body>
+  <!-- Menu Encabezado -->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">Andres Morales</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#inicio" onclick="seleccionar()">Inicio</a>
+          </li>
+          <li>
+            <a href="#sobremi" onclick="seleccionar()">Sobre Mi</a>
+          </li>
+          <li>
+            <a href="#skills" onclick="seleccionar()">Habilidades</a>
+          </li>
+          <li>
+            <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+          </li>
+          <li>
+            <a href="#portfolio" onclick="seleccionar()">Portafolio</a>
+          </li>
+          <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+
+  <!-- Seccion de Inicio -->
+  <section id="inicio" class="inicio">
+    <!-- https://pixabay.com/es/videos/computadora-portátil-las-manos-52823/ -->
+    <video src="assets/images/fondoInicio.mp4" autoplay="true" muted="true" loop="true"></video>
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="assets/images/fotoAndresMorales2.jpg" alt="Foto Andres Morales" />
+      </div>
+      <h1>Andres Morales</h1>
+      <h2>Desarrollador Web</h2>
+      <h2>Estudiante Ing. de Software</h2>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/andres-david-morales-castro-54b12715a"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/AndrewsMorales"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion de Sobre mi -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p>
+        <span>Hola, soy Andres David Morales Castro.</span>
+        Tengo 2 años de experiencia en el desarrollo de aplicativos webs,
+        principalmente intranet para empresas en el sector comercial, así como
+        catálogos para productos o diversos temas. Me gusta mucho trabajar en
+        los lenguajes de PHP, JS y sus respectivos de framework así como
+        manejo bien el tema de maquetación y estilos.
+      </p>
+      <div class="fila">
+        <!-- Datos Personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
           <ul>
             <li>
-              <a href="#inicio" onclick="seleccionar()">Inicio</a>
+              <strong>Cumpleaños</strong>
+              13-02-2003
             </li>
             <li>
-              <a href="#sobremi" onclick="seleccionar()">Sobre Mi</a>
+              <strong>Teléfono</strong>
+              (+57) 301 649 0791
             </li>
             <li>
-              <a href="#skills" onclick="seleccionar()">Habilidades</a>
+              <strong>Email</strong>
+              andresdavidmoralescastro0@gmail.com
             </li>
             <li>
-              <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+              <strong>Website</strong>
+              andresmoralesportafolio.000webhostapp.com
             </li>
             <li>
-              <a href="#portfolio" onclick="seleccionar()">Portafolio</a>
+              <strong>Lugar Residencia</strong>
+              Bogotá D.C, Colombia
             </li>
-            <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+            <li>
+              <strong>Cargo</strong>
+              Desarrollador Web
+            </li>
           </ul>
-        </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-          <i class="fa-solid fa-bars"></i>
         </div>
-      </header>
-    </div>
 
-    <!-- Seccion de Inicio -->
-    <section id="inicio" class="inicio">
-      <!-- https://pixabay.com/es/videos/computadora-portátil-las-manos-52823/ -->
-      <video
-        src="assets/images/fondoInicio.mp4"
-        autoplay="true"
-        muted="true"
-        loop="true"
-      ></video>
-      <div class="contenido-banner">
-        <div class="contenedor-img">
-          <img
-            src="assets/images/fotoAndresMorales2.jpg"
-            alt="Foto Andres Morales"
-          />
-        </div>
-        <h1>Andres Morales</h1>
-        <h2>Desarrollador Web</h2>
-        <h2>Estudiante Ing. de Software</h2>
-        <div class="redes">
-          <a
-            href="https://www.linkedin.com/in/andres-david-morales-castro-54b12715a"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/AndrewsMorales"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+        <!-- Intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>Juegos</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-headphones"></i>
+              <span>Musica</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i>
+              <span>Viajar</span>
+            </div>
+            <div class="interes">
+              <i class="fa-brands fa-windows"></i>
+              <span>Windows</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-basketball"></i>
+              <span>Deporte</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span>Libros</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-motorcycle"></i>
+              <span>Motocicletas</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-camera"></i>
+              <span>Fotografia</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <a download href="assets/docs/CV Andrés David Morales Castro.pdf">
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </a>
+    </div>
+  </section>
 
-    <!-- Seccion de Sobre mi -->
-    <section id="sobremi" class="sobremi">
-      <div class="contenido-seccion">
-        <h2>Sobre Mí</h2>
-        <p>
-          <span>Hola, soy Andres David Morales Castro.</span>
-          Tengo 2 años de experiencia en el desarrollo de aplicativos webs,
-          principalmente intranet para empresas en el sector comercial, así como
-          catálogos para productos o diversos temas. Me gusta mucho trabajar en
-          los lenguajes de PHP, JS y sus respectivos de framework así como
-          manejo bien el tema de maquetación y estilos.
-        </p>
-        <div class="fila">
-          <!-- Datos Personales -->
-          <div class="col">
-            <h3>Datos Personales</h3>
+  <!-- Seccion Skills -->
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Habilidades</h2>
+      <div class="fila">
+        <!-- Technical Skill -->
+        <div class="col">
+          <h3>Habilidades Técnicas</h3>
+          <div class="skill">
+            <span>HTML & CSS & Bootstrap</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>PHP</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Laravel & Wordpress</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Javascript</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Angular & React JS</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>MySql & Sql Server</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Git</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>65%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Professional Skills -->
+        <div class="col">
+          <h3>Habilidades profesionales</h3>
+          <div class="skill">
+            <span>Autodidacta</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Kanban & Scrum</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Responsobilidad</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Trabajo en Equipo</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Facil Aprendizaje</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Creatividad</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Paqueteria Office</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Curriculum -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="fila">
+        <div class="col izquierda">
+          <h3 class="h3i">Educación</h3>
+          <div class="item izq">
+            <h4>Ingenieria en Software</h4>
+            <span class="casa">Corp. Universitaria Iberoamericana</span>
+            <span class="fecha">10/2021 - Actualmente</span>
+            <p>
+              La Ingeniería en Software de la Universidad Iberoamericana
+              combina teoría y práctica en desarrollo de software, adquiriendo
+              habilidades en programación, gestión de proyectos y calidad del
+              software.
+            </p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+          <div class="item izq">
+            <h4>Tecnologo en ADSI</h4>
+            <span class="casa">SENA</span>
+            <span class="fecha">01/2020 - 07/2021</span>
+            <p>
+              La carrera tecnólogo en análisis y desarrollo de sistemas de
+              información forma profesionales en informática y tecnología, con
+              conocimientos en programación, bases de datos, redes y diseño de
+              software.
+            </p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+          <div class="item izq">
+            <h4>Tecnico en Programación</h4>
+            <span class="casa">SENA</span>
+            <span class="fecha">01/2018 - 11/2019</span>
+            <p>
+              El programa técnico en programación del SENA desarrolla
+              habilidades prácticas en lenguajes de programación, bases de
+              datos y diseño de aplicaciones, preparando para el mundo
+              laboral.
+            </p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+          <div class="item izq">
+            <h4>IBM P-TECH</h4>
+            <span class="casa">IBM</span>
+            <span class="fecha">01/2018 - 11/2019</span>
+            <p>
+              IBM P-TECH en Colombia brinda educación técnica en informática y
+              ciberseguridad a estudiantes de secundaria, preparándolos para
+              el trabajo y desarrollando habilidades en áreas de alta demanda.
+            </p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col derecha">
+          <h3 class="h3d">Experiencia de trabajo</h3>
+          <div class="item der">
+            <h4>Programador Junior</h4>
+            <span class="casa">Inversiones Azulado S.A.S.</span>
+            <span class="fecha">08/2022 - 10/2023</span>
+            <p>
+              En Inversiones Azulado SAS, desarrollo aplicativos web
+              principalmente empresas de comercios o cualquier otro tipo de
+              empresa, brindando soluciones personalizadas que se acoplen a
+              las peticiones que realizan los clientes.
+            </p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <div class="item der">
+            <h4>Call Center</h4>
+            <span class="casa">Teleperformance</span>
+            <span class="fecha">05/2022 - 07-2022</span>
+            <p>
+              En Teleperformance, brindé soporte técnico vía telefónica a
+              clientes de Vodafone en España, resolviendo incidencias que se
+              presentan en su servicio contratado para el hogar, dandoles una
+              solución rapida y certera.
+            </p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <div class="item der">
+            <h4>Soporte Tecnico</h4>
+            <span class="casa">DISPROEL</span>
+            <span class="fecha">02/2022 - 03/2022</span>
+            <p>
+              En DISPOREL, ofrecí soporte técnico en el escrutinio de las
+              elecciones al congreso de 2022, asistiendo en software y
+              hardware para garantizar un proceso electoral sin problemas.
+            </p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <div class="item der">
+            <h4>Practicante de tecnólogo en ADSI</h4>
+            <span class="casa">Telefonica Movistar</span>
+            <span class="fecha">01/2021 - 07/2021</span>
+            <p>
+              Mi labor consistió en analizar reclamos de clientes,
+              categorizándolos para un mejor análisis, y automatizar la
+              obtención de datos desde un archivo Excel mediante una página
+              web.
+            </p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Portafolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2>PORTAFOLIO</h2>
+      <div class="galeria">
+        <div class="proyecto" id="activosYValores">
+          <img src="assets/images/fotoActivosYValores.png" alt="" />
+          <div class="overlay">
+            <h3>Plataforma</h3>
+            <p>Activos Y Valores</p>
+          </div>
+        </div>
+        <div class="proyecto" id="intranerSKF">
+          <img src="assets/images/fotoIntranetSKF.png" alt="" />
+          <div class="overlay">
+            <h3>Intranet</h3>
+            <p>Intranet SKF</p>
+          </div>
+        </div>
+        <div class="proyecto" id="intranetPF">
+          <img src="assets/images/fotoIntranetPF.png" alt="" />
+          <div class="overlay">
+            <h3>Intranet</h3>
+            <p>Intranet PF</p>
+          </div>
+        </div>
+        <div class="proyecto" id="crudLaravel">
+          <img src="assets/images/fotoCrudLaravel.jpg" alt="" />
+          <div class="overlay">
+            <h3>Crud</h3>
+            <p>Laravel & Jetstream</p>
+          </div>
+        </div>
+        <div class="proyecto" id="blogResetarios">
+          <img src="assets/images/fotoBlogResetas.png" alt="" />
+          <div class="overlay">
+            <h3>Blog</h3>
+            <p>Resetarios de Cocina</p>
+          </div>
+        </div>
+        <div class="proyecto" id="portafolioPersonal">
+          <img src="assets/images/fotoPortafolioAndresMorales.png" alt="" />
+          <div class="overlay">
+            <h3>Portafolio</h3>
+            <p>Portafolio Pesonal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2>CONTACTO</h2>
+      <div class="fila">
+        <!-- Formulario -->
+        <div class="col">
+          <form id="formContacto">
+            <h3 class="mensajeError" id="mensajeError" hidden>
+              Complete Todos los campos
+            </h3>
+            <input type="text" id="inputNombre" placeholder="Tú Nombre" />
+            <input type="text" id="inputNumero" placeholder="Número telefónico" />
+            <input type="text" id="inputEmail" placeholder="Dirección de correo" />
+            <input type="text" id="inputTema" placeholder="Tema" />
+            <textarea id="textMensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button id="enviarMensajeContacto" type="button">
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </form>
+        </div>
+        <!-- Mapa -->
+        <div class="col">
+          <img src="assets/images/ubicacion.png" alt="" />
+          <div class="info">
             <ul>
               <li>
-                <strong>Cumpleaños</strong>
-                13-02-2003
-              </li>
-              <li>
-                <strong>Teléfono</strong>
-                (+57) 301 649 0791
-              </li>
-              <li>
-                <strong>Email</strong>
-                andresdavidmoralescastro0@gmail.com
-              </li>
-              <li>
-                <strong>Website</strong>
-                andresmoralesportafolio.000webhostapp.com
-              </li>
-              <li>
-                <strong>Lugar Residencia</strong>
+                <i class="fa-solid fa-location-dot"></i>
                 Bogotá D.C, Colombia
               </li>
               <li>
-                <strong>Cargo</strong>
-                Desarrollador Web
+                <i class="fa-brands fa-whatsapp"></i>
+                Whatsapp: (+57) 301 649 0791
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                andresdavidmoralescastro0@gmail.com
               </li>
             </ul>
           </div>
-
-          <!-- Intereses -->
-          <div class="col">
-            <h3>Intereses</h3>
-            <div class="contenedor-intereses">
-              <div class="interes">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>Juegos</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-headphones"></i>
-                <span>Musica</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-plane"></i>
-                <span>Viajar</span>
-              </div>
-              <div class="interes">
-                <i class="fa-brands fa-windows"></i>
-                <span>Windows</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-basketball"></i>
-                <span>Deporte</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-book"></i>
-                <span>Libros</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-motorcycle"></i>
-                <span>Motocicletas</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-camera"></i>
-                <span>Fotografia</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a download href="assets/docs/CV Andrés David Morales Castro.pdf">
-          Descargar CV <i class="fa-solid fa-download"></i>
-          <span class="overlay"></span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Seccion Skills -->
-    <section class="skills" id="skills">
-      <div class="contenido-seccion">
-        <h2>Habilidades</h2>
-        <div class="fila">
-          <!-- Technical Skill -->
-          <div class="col">
-            <h3>Habilidades Técnicas</h3>
-            <div class="skill">
-              <span>HTML & CSS & Bootstrap</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>95%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>PHP</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Laravel & Wordpress</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Javascript</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Angular & React JS</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>MySql & Sql Server</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Git</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Professional Skills -->
-          <div class="col">
-            <h3>Habilidades profesionales</h3>
-            <div class="skill">
-              <span>Autodidacta</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Kanban & Scrum</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Responsobilidad</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>90%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>75%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Facil Aprendizaje</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Creatividad</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Paqueteria Office</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Seccion Curriculum -->
-    <section id="curriculum" class="curriculum">
-      <div class="contenido-seccion">
-        <h2>Curriculum</h2>
-        <div class="fila">
-          <div class="col izquierda">
-            <h3 class="h3i">Educación</h3>
-            <div class="item izq">
-              <h4>Ingenieria en Software</h4>
-              <span class="casa">Corp. Universitaria Iberoamericana</span>
-              <span class="fecha">10/2021 - Actualmente</span>
-              <p>
-                La Ingeniería en Software de la Universidad Iberoamericana
-                combina teoría y práctica en desarrollo de software, adquiriendo
-                habilidades en programación, gestión de proyectos y calidad del
-                software.
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>Tecnologo en ADSI</h4>
-              <span class="casa">SENA</span>
-              <span class="fecha">01/2020 - 07/2021</span>
-              <p>
-                La carrera tecnólogo en análisis y desarrollo de sistemas de
-                información forma profesionales en informática y tecnología, con
-                conocimientos en programación, bases de datos, redes y diseño de
-                software.
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>Tecnico en Programación</h4>
-              <span class="casa">SENA</span>
-              <span class="fecha">01/2018 - 11/2019</span>
-              <p>
-                El programa técnico en programación del SENA desarrolla
-                habilidades prácticas en lenguajes de programación, bases de
-                datos y diseño de aplicaciones, preparando para el mundo
-                laboral.
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>IBM P-TECH</h4>
-              <span class="casa">IBM</span>
-              <span class="fecha">01/2018 - 11/2019</span>
-              <p>
-                IBM P-TECH en Colombia brinda educación técnica en informática y
-                ciberseguridad a estudiantes de secundaria, preparándolos para
-                el trabajo y desarrollando habilidades en áreas de alta demanda.
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col derecha">
-            <h3 class="h3d">Experiencia de trabajo</h3>
-            <div class="item der">
-              <h4>Programador Junior</h4>
-              <span class="casa">Inversiones Azulado S.A.S.</span>
-              <span class="fecha">08/2022 - Actualmente</span>
-              <p>
-                En Inversiones Azulado SAS, desarrollo aplicativos web
-                principalmente empresas de comercios o cualquier otro tipo de
-                empresa, brindando soluciones personalizadas que se acoplen a
-                las peticiones que realizan los clientes.
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>Call Center</h4>
-              <span class="casa">Teleperformance</span>
-              <span class="fecha">05/2022 - 07-2022</span>
-              <p>
-                En Teleperformance, brindé soporte técnico vía telefónica a
-                clientes de Vodafone en España, resolviendo incidencias que se
-                presentan en su servicio contratado para el hogar, dandoles una
-                solución rapida y certera.
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>Soporte Tecnico</h4>
-              <span class="casa">DISPROEL</span>
-              <span class="fecha">02/2022 - 03/2022</span>
-              <p>
-                En DISPOREL, ofrecí soporte técnico en el escrutinio de las
-                elecciones al congreso de 2022, asistiendo en software y
-                hardware para garantizar un proceso electoral sin problemas.
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-            <div class="item der">
-              <h4>Practicante de tecnólogo en ADSI</h4>
-              <span class="casa">Telefonica Movistar</span>
-              <span class="fecha">01/2021 - 07/2021</span>
-              <p>
-                Mi labor consistió en analizar reclamos de clientes,
-                categorizándolos para un mejor análisis, y automatizar la
-                obtención de datos desde un archivo Excel mediante una página
-                web.
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seccion Portafolio -->
-    <section id="portfolio" class="portfolio">
-      <div class="contenido-seccion">
-        <h2>PORTAFOLIO</h2>
-        <div class="galeria">
-          <div class="proyecto" id="crudLaravel">
-            <img src="assets/images/fotoCrudLaravel.jpg" alt="" />
-            <div class="overlay">
-              <h3>Crud</h3>
-              <p>Laravel & Jetstream</p>
-            </div>
-          </div>
-          <div class="proyecto" id="blogResetarios">
-            <img src="assets/images/fotoBlogResetas.png" alt="" />
-            <div class="overlay">
-              <h3>Blog</h3>
-              <p>Resetarios de Cocina</p>
-            </div>
-          </div>
-          <div class="proyecto" id="portafolioPersonal">
-            <img src="assets/images/fotoPortafolioAndresMorales.png" alt="" />
-            <div class="overlay">
-              <h3>Portafolio</h3>
-              <p>Portafolio Pesonal</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seccion Contacto -->
-    <section id="contacto" class="contacto">
-      <div class="contenido-seccion">
-        <h2>CONTACTO</h2>
-        <div class="fila">
-          <!-- Formulario -->
-          <div class="col">
-            <form id="formContacto">
-              <h3 class="mensajeError" id="mensajeError" hidden>
-                Complete Todos los campos
-              </h3>
-              <input type="text" id="inputNombre" placeholder="Tú Nombre" />
-              <input
-                type="text"
-                id="inputNumero"
-                placeholder="Número telefónico"
-              />
-              <input
-                type="text"
-                id="inputEmail"
-                placeholder="Dirección de correo"
-              />
-              <input type="text" id="inputTema" placeholder="Tema" />
-              <textarea
-                id="textMensaje"
-                cols="30"
-                rows="10"
-                placeholder="Mensaje"
-              ></textarea>
-              <button id="enviarMensajeContacto">
-                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                <span class="overlay"></span>
-              </button>
-            </form>
-          </div>
-          <!-- Mapa -->
-          <div class="col">
-            <img src="assets/images/ubicacion.png" alt="" />
-            <div class="info">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-location-dot"></i>
-                  Bogotá D.C, Colombia
-                </li>
-                <li>
-                  <i class="fa-brands fa-whatsapp"></i>
-                  Whatsapp: (+57) 301 649 0791
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  andresdavidmoralescastro0@gmail.com
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <a href="#inicio" class="arriba">
-        <i class="fa-solid fa-angles-up"></i>
+  <!-- footer -->
+  <footer>
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/andres-david-morales-castro-54b12715a">
+        <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <div class="redes">
-        <a
-          href="https://www.linkedin.com/in/andres-david-morales-castro-54b12715a"
-        >
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/AndrewsMorales">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-      <h2>Desarrollado por Andres Morales &copy;2023</h2>
-    </footer>
-    <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+      <a href="https://github.com/AndrewsMorales">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <h2>Desarrollado por Andres Morales &copy;2023</h2>
+  </footer>
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

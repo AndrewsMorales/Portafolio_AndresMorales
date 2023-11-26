@@ -68,11 +68,20 @@ $("#blogResetarios").on("click", function () {
 $("#portafolioPersonal").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Portafolio_AndresMorales");
 });
+$("#activosYValores").on("click", function () {
+  window.open("https://actuvosyvalores.bismmasoft.com");
+});
+$("#intranerSKF").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Intranet-SKF");
+});
+$("#intranetPF").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Intranet-PF");
+});
 
 /* 
   Se crea una funcion apartir de la ejecucion de un evento para enviar el mensaje de contacto
 */
-$("#enviarMensajeContacto").on("click", function () {
+$(document).on("click", "#enviarMensajeContacto", function () {
   var inNombre = $("#inputNombre").val().trim();
   var inNumero = $("#inputNumero").val().trim();
   var inEmail = $("#inputEmail").val().trim();
