@@ -159,12 +159,13 @@ html {
 }
 
 .sobremi .contenido-seccion p {
-  font: 18px;
+  font-size: 18px;
   line-height: 22px;
   margin-bottom: 20px;
 }
 
 .sobremi .contenido-seccion p span {
+  font-size: 20.5px;
   color: #f74747;
   font-weight: bold;
 }
