@@ -62,6 +62,15 @@ window.onscroll = function () {
 $("#crudLaravel").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Crud_Laravel");
 });
+$("#interdrogas").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Interdrogas");
+});
+$("#impresistem").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Impresistem_partners");
+});
+$("#coopicredito").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Coopicredito");
+});
 $("#blogResetarios").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Blog_Resetarios");
 });
@@ -69,7 +78,7 @@ $("#portafolioPersonal").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Portafolio_AndresMorales");
 });
 $("#activosYValores").on("click", function () {
-  window.open("https://actuvosyvalores.bismmasoft.com");
+  window.open("https://activosyvalores.com");
 });
 $("#intranerSKF").on("click", function () {
   window.open("https://github.com/AndrewsMorales/Intranet-SKF");
