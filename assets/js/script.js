@@ -89,6 +89,9 @@ $("#intranetPF").on("click", function () {
 $("#modoAvion").on("click", function () {
   window.open("https://github.com/AndrewsMorales/modoavion");
 });
+$("#pruebaTecnica").on("click", function () {
+  window.open("https://github.com/AndrewsMorales/Prueba-tecnica-FrontEnd");
+});
 
 /* 
   Se crea una funcion apartir de la ejecucion de un evento para enviar el mensaje de contacto
